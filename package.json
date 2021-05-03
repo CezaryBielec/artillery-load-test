@@ -1,0 +1,16 @@
+{
+  "name": "bitpandaload",
+  "version": "1.0.0",
+  "description": "Load test",
+  "main": "index.js",
+  "scripts": {
+    "test": "artillery run artillery1000VirtualUsersWithin15Seconds.yml",
+    "test-report": "artillery run --output report.json artillery1000VirtualUsersWithin15Seconds.yml",
+    "report": "artillery report report.json"
+  },
+  "author": "Cezary Bielec",
+  "license": "ISC",
+  "devDependencies": {
+    "artillery": "^1.7.2"
+  }
+}

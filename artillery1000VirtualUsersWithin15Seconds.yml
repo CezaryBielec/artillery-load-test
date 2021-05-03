@@ -1,0 +1,12 @@
+config:
+  target: "https://www.amazon.com"
+  phases:
+    - duration: 15
+      arrivalRate: 67
+      maxVusers: 1000
+
+scenarios:
+  - name: 1000 users within 15 seconds
+    flow:
+      - get:
+          url: "/"
